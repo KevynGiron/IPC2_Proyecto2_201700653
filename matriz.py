@@ -72,4 +72,13 @@ class matriz:
                 print(str(actual.columna) + "       | " + str(actual.valor))
                 actual = actual.derecha
             eFila = eFila.siguiente
-    
+
+    def graficar(self, m, n):
+        relleno = '<TD BGCOLOR = "#000000">   </TD>'
+        blanco = '<TD>   </TD>'
+        code = ''
+        eFila = self.efilas.primero
+        for a in range(0, m):
+            #code = code + '<TR>'
+            actual = eFila.accesoNodo
+            for b in range(0, n):
